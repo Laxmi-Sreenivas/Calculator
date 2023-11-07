@@ -36,15 +36,19 @@ public class Main {
             switch (choice) {
                 case 1:
                     result = add(num1, num2);
+                    logger.info("Operation : " + Double.toString(num1) + " + " + Double.toString(num2) + " = " + Double.toString(result))
                     break;
                 case 2:
                     result = subtract(num1, num2);
+                    logger.info("Operation : " + Double.toString(num1) + " - " + Double.toString(num2) + " = " + Double.toString(result))
                     break;
                 case 3:
                     result = multiply(num1, num2);
+                    logger.info("Operation : " + Double.toString(num1) + " * " + Double.toString(num2) + " = " + Double.toString(result))
                     break;
                 case 4:
                     result = divide(num1, num2);
+                    logger.info("Operation : " + Double.toString(num1) + " / " + Double.toString(num2) + " = " + Double.toString(result))
                     break;
                 default:
                     System.out.println("Invalid choice. Please select a valid operation.");
